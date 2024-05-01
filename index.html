@@ -11,40 +11,30 @@
   <link href="https://db.onlinewebfonts.com/c/860c3ec7bbc5da3e97233ccecafe512e?family=Circular+Std+Book"
     rel="stylesheet">
   <title>Template1</title>
-  <style type="text/css">
-    @font-face {
-      font-family: "Circular Std Thin";
-      src: url("https://db.onlinewebfonts.com/t/860c3ec7bbc5da3e97233ccecafe512e.eot");
-      src: url("https://db.onlinewebfonts.com/t/860c3ec7bbc5da3e97233ccecafe512e.eot?#iefix")format("embedded-opentype"),
-        url("https://db.onlinewebfonts.com/t/860c3ec7bbc5da3e97233ccecafe512e.woff2")format("woff2"),
-        url("https://db.onlinewebfonts.com/t/860c3ec7bbc5da3e97233ccecafe512e.woff")format("woff"),
-        url("https://db.onlinewebfonts.com/t/860c3ec7bbc5da3e97233ccecafe512e.ttf")format("truetype"),
-        url("https://db.onlinewebfonts.com/t/860c3ec7bbc5da3e97233ccecafe512e.svg#Circular Std Book")format("svg");
-    }
-
-    @font-face {
-      font-family: "Circular Std Medium";
-      src: url("https://db.onlinewebfonts.com/t/9475d6a0b79c164f9f605673714e75d9.eot");
-      src: url("https://db.onlinewebfonts.com/t/9475d6a0b79c164f9f605673714e75d9.eot?#iefix")format("embedded-opentype"),
-        url("https://db.onlinewebfonts.com/t/9475d6a0b79c164f9f605673714e75d9.woff2")format("woff2"),
+     <style type="text/css">
+      @font-face{
+    font-family: "Circular Std Medium";
+    src: url("https://db.onlinewebfonts.com/t/9475d6a0b79c164f9f605673714e75d9.eot");
+    src: url("https://db.onlinewebfonts.com/t/9475d6a0b79c164f9f605673714e75d9.eot?#iefix")format("embedded-opentype"),
         url("https://db.onlinewebfonts.com/t/9475d6a0b79c164f9f605673714e75d9.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/9475d6a0b79c164f9f605673714e75d9.woff2")format("woff2"),
         url("https://db.onlinewebfonts.com/t/9475d6a0b79c164f9f605673714e75d9.ttf")format("truetype"),
         url("https://db.onlinewebfonts.com/t/9475d6a0b79c164f9f605673714e75d9.svg#Circular Std Medium")format("svg");
-    }
+    font-weight:normal;
+    font-style:normal;
+    font-display:swap;
+}
 
-    @font-face {
-      font-family: "Circular Std Bold";
-      src: url("https://db.onlinewebfonts.com/t/961a181da27e7cbc072ec2fb5bbfe2a9.eot");
-      src: url("https://db.onlinewebfonts.com/t/961a181da27e7cbc072ec2fb5bbfe2a9.eot?#iefix")format("embedded-opentype"),
-        url("https://db.onlinewebfonts.com/t/961a181da27e7cbc072ec2fb5bbfe2a9.woff2")format("woff2"),
-        url("https://db.onlinewebfonts.com/t/961a181da27e7cbc072ec2fb5bbfe2a9.woff")format("woff"),
-        url("https://db.onlinewebfonts.com/t/961a181da27e7cbc072ec2fb5bbfe2a9.ttf")format("truetype"),
-        url("https://db.onlinewebfonts.com/t/961a181da27e7cbc072ec2fb5bbfe2a9.svg#Circular Std Bold")format("svg");
-    }
-  </style>
+    </style>
+      <style type="text/css">
+      @import url(https://db.onlinewebfonts.com/c/961a181da27e7cbc072ec2fb5bbfe2a9?family=Circular+Std+Bold);
+    </style>
+       <style type="text/css">
+      @import url(https://db.onlinewebfonts.com/c/860c3ec7bbc5da3e97233ccecafe512e?family=Circular+Std+Book);
+    </style>
   <style type="text/css">
     body {
-      font-family: "Circular Std Medium";
+      font-family: "Circular Std Book", Arial, Helvetica, san-serif;
       background-color: #f5f7f9;
     }
 
@@ -52,6 +42,7 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+     font-family: "Circular Std Book", Arial, Helvetica, san-serif;
     }
 
     .template-email-wrapper {
@@ -75,10 +66,10 @@
 
     .email-title {
       margin-top: 20px;
-      font-family: "Circular Std Bold";
+      font-family: "Circular Std Bold", Arial, Helvetica, san-serif;
       font-size: 32px;
       font-style: normal;
-      font-weight: 400;
+      font-weight: bold;
       line-height: normal;
       text-transform: capitalize;
     }
@@ -87,7 +78,7 @@
       width: 100%;
       max-width: 480px;
       height: auto;
-      font-family: "Circular Std Thin";
+      font-family: "Circular Std Thin", Arial, Helvetica, san-serif;
       margin: auto;
       color: #000;
       font-size: 16px;
@@ -97,24 +88,27 @@
     }
 
     .highlight {
-      color: #FF6D03
+      color: #FF6D03;
+       font-family: "Circular Std Bold",  Arial, Helvetica, san-serif;
+      font-weight: bold;
     }
 
     .hightlight-number {
       font-size: 32px;
-      font-family: "Circular Std Bold";
+      font-weight: bold;
+      font-family: "Circular Std Bold",  Arial, Helvetica, san-serif;
     }
 
     .email-list {
       width: 100%;
       margin-bottom: 24px;
+      display: flex;
+      align-items: center;
 
     }
 
     .block-item {
       width: calc((100% - 32px) / 2);
-      display: inline-block;
-      margin-right: -5px;
       border-radius: 40px;
       background-color: rgba(41, 113, 240, 0.05);
       padding: 24px 18px;
@@ -127,10 +121,10 @@
     .block-item .item-title {
       color: #2971F0;
       text-align: center;
-      font-family: "Circular Std Bold";
+      font-family: "Circular Std Bold", Arial, Helvetica, san-serif;
       font-size: 22px;
       font-style: normal;
-      font-weight: 400;
+      font-weight: bold;
       line-height: normal;
       margin-bottom: 16px;
     }
@@ -150,10 +144,10 @@
       margin: auto;
       padding: 16px 48px;
       border-radius: 100px;
-      background: var(--Orange, #FF6D03);
+      background: #FF6D03;
       color: #FFF;
       text-align: center;
-      font-family: "Circular Std Medium";
+      font-family: "Circular Std Medium", Arial, Helvetica, san-serif;;
       font-size: 17px;
       font-style: normal;
       font-weight: 400;
@@ -163,17 +157,21 @@
 
     .list-data {
       width: 100%;
+      display: flex !important;
+      align-items: center;
     }
 
     .list-data .data-item {
-      display: inline-block;
-      margin-right: -10px;
-      width: 68px;
-      height: 68px;
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+      min-width: 64px;
+      max-width: 64px;
+      width: 64px;
+      height: 64px;
       border-radius: 100px;
-      border: 3px solid var(--white, #FFF);
+      border: 3px solid #FFF;
       box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.12);
-      position: relative;
     }
 
     .list-data .data-item .image-item {
@@ -185,50 +183,42 @@
     }
 
     .list-data .data-item .mask {
-      position: absolute;
-      width: 100%;
-      height: 100%;
+      min-width: 58px;
+      max-width: 58px;
+      width: 58px;
+      height: 58px;
       border: none;
       border-radius: 50%;
       border-radius: 100px;
       background: rgba(0, 0, 0, 0.70);
       color: #FFF;
       text-align: center;
-      font-family: "Circular Std Medium";
+      font-family: "Circular Std Medium",  Arial, Helvetica, san-serif;
       font-size: 22px;
       font-style: normal;
       font-weight: 400;
-      line-height: normal;
-      top: 0;
-      left: 0;
+      display: block;
+      line-height: 62px;
     }
 
-    .list-data .data-item .mask .mask-content {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      width: 80%;
-      transform: translate(-50%, -50%);
+    .mask-content {
+        vertical-align: middle;
+          font-weight: 400;
+      display: block;
+      line-height: 62px;
     }
 
-    .list-data .data-item:first-child {
-      z-index: 5;
+
+    .data-item-1, .data-item-2 {
+        margin-right: -8px !important;
+    }
+      .data-item-3 {
+        margin-right: -16px !important;
+    }
+      .data-item-4 {
+        margin-right: -24px !important;
     }
 
-    .list-data .data-item:nth-child(2) {
-      z-index: 4;
-      left: -8px;
-    }
-
-    .list-data .data-item:nth-child(3) {
-      z-index: 3;
-      left: -16px;
-    }
-
-    .list-data .data-item:last-child {
-      z-index: 2;
-      left: -24px;
-    }
   </style>
 </head>
 
@@ -279,21 +269,20 @@
           class="highlight hightlight-number">$6.9</span></p>
       <p>You can study with:</p>
     </div>
-    <div class="email-list">
+    <div class="email-list" style="display: flex">
       <div class="block-item">
         <h3 class="item-title">+1000 native teachers</h3>
-        <div class="list-data">
-          <div class="data-item">
+        <div class="list-data" style="display: flex">
+          <div class="data-item data-item-1">
             <img src="https://i.postimg.cc/QMHwvVXp/teacher-2.png" alt="" class="image-item">
           </div>
-          <div class="data-item">
+          <div class="data-item data-item-2">
             <img src="https://i.postimg.cc/qRKYMY6q/teacher-4.png" alt="" class="image-item">
           </div>
-          <div class="data-item">
+          <div class="data-item data-item-3">
             <img src="https://i.postimg.cc/MH8LcD1D/teacher-6.png" alt="" class="image-item">
           </div>
-          <div class="data-item">
-            <img src="https://i.postimg.cc/zfstMj2r/teacher-8.png" alt="" class="image-item">
+          <div class="data-item data-item-4" style="background-image: url('https://i.postimg.cc/zfstMj2r/teacher-8.png'); background-position: center center; background-size: cover">
             <div class="mask">
               <span class="mask-content">+1k</span>
             </div>
@@ -303,17 +292,16 @@
       <div class="block-item">
         <h3 class="item-title">+10,000 topics</h3>
         <div class="list-data">
-          <div class="data-item">
+          <div class="data-item data-item-1">
             <img src="https://i.postimg.cc/QMHwvVXp/teacher-2.png" alt="" class="image-item">
           </div>
-          <div class="data-item">
+          <div class="data-item data-item-2" style="margin-right: -8px">
             <img src="https://i.postimg.cc/qRKYMY6q/teacher-4.png" alt="" class="image-item">
           </div>
-          <div class="data-item">
+          <div class="data-item data-item-3">
             <img src="https://i.postimg.cc/MH8LcD1D/teacher-6.png" alt="" class="image-item">
           </div>
-          <div class="data-item">
-            <img src="https://i.postimg.cc/zfstMj2r/teacher-8.png" alt="" class="image-item">
+          <div class="data-item data-item-4" style="background-image: url('https://i.postimg.cc/zfstMj2r/teacher-8.png'); background-position: center center; background-size: cover">
             <div class="mask">
               <span class="mask-content">+1k</span>
             </div>
